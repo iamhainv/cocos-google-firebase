@@ -1,0 +1,1 @@
+[[SDKWrapper shared] application:application didFinishLaunchingWithOptions:launchOptions];

@@ -1,0 +1,40 @@
+// libfirebase — Android library module holding the FirebaseHub native bridge.
+// Mirrors AdMob's libadmob (same Cocos 3.8 gradle props). The google-services plugin +
+// Firebase BoM are applied to the APP module (app-build.gradle.snippet); this module
+// compiles FirebaseHub against the Firebase classes the app provides.
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.cocos.firebase'
+    compileSdkVersion PROP_COMPILE_SDK_VERSION.toInteger()
+
+    defaultConfig {
+        minSdkVersion PROP_MIN_SDK_VERSION.toInteger()
+        targetSdkVersion PROP_TARGET_SDK_VERSION.toInteger()
+        versionCode 1
+        versionName "1.0"
+    }
+
+    sourceSets.main {
+        java.srcDirs "src"
+        manifest.srcFile "AndroidManifest.xml"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':libcocos')
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-config'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.code.gson:gson:2.9.0'
+}

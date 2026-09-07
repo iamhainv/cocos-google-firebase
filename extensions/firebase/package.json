@@ -1,0 +1,53 @@
+{
+  "name": "firebase",
+  "title": "Firebase",
+  "package_version": 2,
+  "version": "1.0.0",
+  "author": "iamhainv",
+  "description": "Firebase (Analytics, Crashlytics, Remote Config, Cloud Messaging, Auth) for Cocos Creator native builds. Mirrors the GoogleAdMob extension; bridges over JsbBridgeWrapper so it coexists with AdMob without owning native.bridge.",
+  "keywords": [
+    "cocos",
+    "cocos-creator",
+    "cocos-creator-extension",
+    "firebase",
+    "analytics",
+    "crashlytics",
+    "remote-config",
+    "cloud-messaging",
+    "push-notifications",
+    "android",
+    "ios"
+  ],
+  "editor": ">=3.8.0",
+  "contributions": {
+    "builder": "./dist/builder.js",
+    "asset-db": {
+      "mount": {
+        "path": "./assets",
+        "readonly": true
+      }
+    }
+  },
+  "dependencies": {
+    "@types/fs-extra": "^9.0.0",
+    "@types/node": "^18.0.0",
+    "fs-extra": "^10.0.0",
+    "plist": "^3.1.0"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamhainv/cocos-google-firebase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamhainv/cocos-google-firebase/issues"
+  },
+  "homepage": "https://github.com/iamhainv/cocos-google-firebase#readme"
+}

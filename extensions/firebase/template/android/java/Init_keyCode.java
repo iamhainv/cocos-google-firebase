@@ -1,0 +1,1 @@
+        SDKWrapper.shared().init(this);

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- libfirebase manifest. FCM service is declared here; merged into the app manifest. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application>
+        <!-- Cloud Messaging service — not implemented yet (see FirebaseHub.java).
+             Uncomment + implement FirebaseMsgService when wiring up Android FCM.
+        <service
+            android:name=".FirebaseMsgService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        -->
+    </application>
+</manifest>

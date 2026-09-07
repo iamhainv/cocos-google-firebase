@@ -1,0 +1,2 @@
+
+    [FirebaseHub configure];   // Firebase extension (auto-inserted)

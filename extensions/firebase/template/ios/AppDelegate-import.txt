@@ -1,0 +1,2 @@
+
+#import "FirebaseHub.h"   // Firebase extension (auto-inserted)

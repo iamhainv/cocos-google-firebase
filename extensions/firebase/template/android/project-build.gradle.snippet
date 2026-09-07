@@ -1,0 +1,13 @@
+
+// >>> Firebase extension — Gradle plugin classpaths (auto-injected) >>>
+// NOTE: in newer Cocos Android templates the plugin classpaths may belong in the root
+// `buildscript { dependencies { ... } }` block (which must sit at the TOP of the file) or
+// be declared via `settings.gradle` pluginManagement. Verify against the generated project
+// and move this block if Gradle rejects a trailing buildscript{}.
+buildscript {
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.2'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:3.0.2'
+    }
+}
+// <<< Firebase extension <<<

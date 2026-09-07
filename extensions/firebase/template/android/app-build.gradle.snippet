@@ -1,0 +1,27 @@
+
+// >>> Firebase extension (auto-injected - do not edit; removed when Firebase is disabled) >>>
+// Module-level buildscript: plugin ids resolve against THIS script's classpath.
+// (A buildscript{} inside the apply-from'd native build.gradle does NOT reach
+// plugin-id resolution - applied scripts' classpaths are private to them.)
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.2'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:3.0.2'
+    }
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+dependencies {
+    implementation project(':libfirebase')
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-config'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-auth'
+}
+// <<< Firebase extension <<<
